@@ -28,13 +28,21 @@ body {
   margin-bootom: 10px;
   overflow: hidden;
 }
-
 .text-and-image img {
-  width: 50vw;
-  height: 5vw;
-  margin-bottom: 11px;
-  overflow: hidden;
-  vertical-align: middle;
-  align-items:center;
-  justify-content: center;
+  width: 100%;
+  height: auto;
+  display: block;
+  flex-direction: column;
+  margin-left:0;
+  margin-right: 0;
 }
+.text-and-image {
+  
+}
+/* position: relative;
+object-fit: cover;
+width: 100vw;
+max-height:10vw;
+flex-direction: column;
+margin-left:0;
+margin-right: 0;
