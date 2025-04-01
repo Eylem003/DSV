@@ -19,6 +19,7 @@ html {
 
 body {
   margin-bottom: 60px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .logo {
@@ -26,4 +27,14 @@ body {
   height: 3.5rem;
   margin-bootom: 10px;
   overflow: hidden;
+}
+
+.text-and-image img {
+  width: 50vw;
+  height: 5vw;
+  margin-bottom: 11px;
+  overflow: hidden;
+  vertical-align: middle;
+  align-items:center;
+  justify-content: center;
 }
