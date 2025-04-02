@@ -59,6 +59,15 @@ body {
   margin-bottom: 20px;
 }
 
+.billeder_1 {
+  width: 134vw;
+  height: 45vw;
+}
+
+.billeder_2 {
+  width: 83vw;
+  height: 45vw;
+}
 /* position: relative;
 object-fit: cover;
 width: 100vw;
