@@ -59,14 +59,14 @@ body {
   margin-bottom: 20px;
 }
 
-.billeder_1 {
-  width: 134vw;
-  height: 45vw;
+/*.billeder_1 img {
+  width: 962px;
+  height: 434px;
 }
 
-.billeder_2 {
-  width: 83vw;
-  height: 45vw;
+.billeder_2 img {
+  width: 962px;
+  height: 434px;
 }
 /* position: relative;
 object-fit: cover;
