@@ -20,7 +20,7 @@ html {
 body {
   margin-bottom: 60px;
   font-family: Arial, Helvetica, sans-serif;
-  background-color: whitesmoke;
+  background-color: white;
 }
 
 .logo {
@@ -28,6 +28,15 @@ body {
   height: 3.5rem;
   margin-bootom: 10px;
   overflow: hidden;
+}
+
+.text-center img {
+  width: 100%;              
+  height: auto;             
+  display: block;           
+  flex-direction: column;   
+  margin-left:0;            
+  margin-right: 0;          
 }
 
 .text-and-image img {
@@ -59,19 +68,3 @@ body {
   margin-bottom: 20px;
 }
 
-/*.billeder_1 img {
-  width: 962px;
-  height: 434px;
-}
-
-.billeder_2 img {
-  width: 962px;
-  height: 434px;
-}
-/* position: relative;
-object-fit: cover;
-width: 100vw;
-max-height:10vw;
-flex-direction: column;
-margin-left:0;
-margin-right: 0;
