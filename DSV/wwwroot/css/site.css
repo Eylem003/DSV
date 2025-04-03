@@ -30,47 +30,29 @@ body {
   overflow: hidden;
 }
 
-.hero {
-  position: relative;
-  width: 100%;
-  height: 50vh;
-  display: flex;
+.text-center iframe{
   align-items: center;
-  justify-content: center;
 }
 
-.hero h1 {
+.text-center img {
+  width: 400px;
+  height: auto;
+  margin-left: 0;
+  margin-right: 0;
+  align-items: center;
+}
+
+.text-center h2 {
   text-align: center;
-  font-size: 6rem;
-  padding: 20px;
-  margin: 15px;
-  z-index: 1;
-  opacity: 0.7;
-  color: black;
+  color: midnightblue;
+  font-size: 60px;
+  font-family:FoundrySterlingOT3W03-ExtraBold, Arial, Helvetica, sans-serif;
+  font-weight: bolder;
 }
 
-.video-container {
-  position: absolute;
-  width: auto;
-  left:0;
-  top:0;
-  height:auto;
-}
-.video
-{
-  width: 1013px;
-  height:540px;
-}
-
-.color-overlay { 
-  position: absolute;
-  background: lightgray;
-  width:960px;
-  height: 546px;
-  left:0;
-  top:0;
-  opacity:0.5;
- 
+.DSV-text-and-image {
+  padding-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .DSV-text-and-image hr {
@@ -89,52 +71,68 @@ body {
   margin-right: 0;
 }
 
-.DSV-text-and-image p {
+.OmDSV-text-and-image {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto; 
+}
+
+.OmDSV-text-and-image p {
+  max-width: 800px;
   color: black;
   font-size: 17px;
   line-height: 1.5em;
   font-family:FoundrySterlingOT3W03-ExtraBold, Arial, Helvetica, sans-serif;
+  margin-bottom: 20px;
 }
 
-.DSV-text-and-image h5{
+.OmDSV-text-and-image h5{
   color: black;
   font-size: 35px;
   line-height: 1.5em;
   font-family:FoundrySterlingOT3W03-ExtraBold, Arial, Helvetica, sans-serif;
   font-weight: bolder;
+  padding-top: 1rem;
+  margin-bottom: 20px;
 }
 
-.DSV-text-and-image h6 {
+.OmDSV-text-and-image h6 {
   color: black;
   font-size: 20px;
+  text-align: center; !important;
   line-height: 1.5em;
   font-family:FoundrySterlingOT3W03-ExtraBold, Arial, Helvetica, sans-serif;
+  margin-bottom: 20px;
 }
 
-.DSV-text-and-image b {
+.OmDSV-text-and-image b {
   color: black;
   font-size: 19px;
+  text-align: center; !important;
   line-height: 1.5em;
   font-family:FoundrySterlingOT3W03-ExtraBold, Arial, Helvetica, sans-serif;
   font-weight: bolder;
+  margin-bottom: 20px;
 }
 
-.DSV-text-and-image i {
+.OmDSV-text-and-image i {
   color: black;
   font-size: 17px;
+  text-align: center; !important;
   line-height: 1.5em;
   font-family:FoundrySterlingOT3W03-ExtraBold, Arial, Helvetica, sans-serif;
   font-weight: bolder;
+  margin-bottom: 20px;
 }
 
-.text-center img {
-  width: 100%;              
-  height: auto;             
-  display: block;           
-  flex-direction: column;   
-  margin-left:0;            
-  margin-right: 0;          
+.Small-picture img {
+  width: 15vw;
+  height: 15vw;
+  margin-bottom: 20px;
+  overflow: hidden;
 }
+
 
 .text-and-image img {
   width: 100%;
