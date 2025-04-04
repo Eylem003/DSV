@@ -72,7 +72,7 @@ body {
 }
 
 .OmDSV-text-and-image {
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: space-between;
   margin: 0 auto; 
@@ -84,6 +84,7 @@ body {
   width: 15vw;
   height: 15vw;
   margin-bottom: 20px;
+  position: relative; !important;
 }
 
 .OmDSV-text-and-image p {
