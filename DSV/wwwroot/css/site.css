@@ -65,10 +65,10 @@ body {
 .DSV-text-and-image img {
   width: 100%;
   height: auto;
-  display: block;
   flex-direction: column;
   margin-left: 0;
   margin-right: 0;
+  overflow:hidden; 
 }
 
 .OmDSV-text-and-image {
@@ -76,6 +76,14 @@ body {
   align-items: center;
   justify-content: space-between;
   margin: 0 auto; 
+  display: block;
+}
+
+.Small-picture img {
+  overflow: hidden;
+  width: 15vw;
+  height: 15vw;
+  margin-bottom: 20px;
 }
 
 .OmDSV-text-and-image p {
@@ -125,14 +133,6 @@ body {
   font-weight: bolder;
   margin-bottom: 20px;
 }
-
-.Small-picture img {
-  width: 15vw;
-  height: 15vw;
-  margin-bottom: 20px;
-  overflow: hidden;
-}
-
 
 .text-and-image img {
   width: 100%;
