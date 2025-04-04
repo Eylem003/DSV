@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using System;
 using System.Collections.Generic;
+using System.Xml;
 using Microsoft.AspNetCore.Mvc;
 
 public class Booking
@@ -10,7 +11,8 @@ public class Booking
     public static string BookingTime { get; set; }
     public string Comment { get; set; }
 
-    public class BookingController : Controller
+
+    public class BookingController<var> : Controller
     {
         private static List<Booking> bookings = new List<Booking>();
 
@@ -21,10 +23,13 @@ public class Booking
             return View();
         }
 
-        public IActionResult SubmitBooking(string room, DateTime BookingDate, string BookingTime, string comment)
+        public IActionResult SubmitBooking(string room, DateTime bookingDate, string BookingTime, string comment)
         {
             if (string.IsNullOrEmpty(room) || string.IsNullOrEmpty(BookingTime) || string.IsNullOrEmpty(comment))
                 return View("Error", new { message = "Alle felter skal udfyldes." });
+            return null;
         }
+        
     }
 }
+
