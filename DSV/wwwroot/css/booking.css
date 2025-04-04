@@ -1,55 +1,61 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 0;
+    font-family: FoundrySterlingOT3W03-ExtraBold, Arial, Helvetica, sans-serif;
+    margin:0;
+    padding:0;
+    background:white;
+}
+
+header {
+    background: midnightblue;
+    color: white;
+    text-align: center;
+    padding: 20px;
 }
 
 h1 {
-    text-align: center;
-    margin-top: 20px;
+    margin: 0;
 }
 
-.filter-container {
-    display: flex;
-    justify-content: center;
-    margin: 20px 0;
+main {
+    padding: 20px;
 }
-
-.filter-container label {
+.filter {
+    margin-bottom: 20px;
+}
+.filter label {
     margin-right: 10px;
 }
 
-#meeting-rooms-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
+filter select {
+    padding: 5px;
+    margin-right: 20px;
 }
 
-.room-card {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 200px;
+.rooms table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.rooms th .rooms td {
+    padding: 10px;
     text-align: center;
+    border: 1px solid #ddd;
 }
 
-.room-card button {
-    margin-top: 10px;
+.rooms th {
+    background:midnightblue;
+    color: white;
+}
+.rooms td {
+    background: white;
+}
+.rooms .disabled {
+    color: red;
+    text-decoration:none
 }
 
-#booking-form {
-    display: none;
-    background-color: #fff;
-    padding: 20px;
-    margin: 0 auto;
-    width: 300px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+.rooms.disabled:hover {
+    cursor: not-allowed;
 }
 
-.hidden {
-    display: none;
-}
+fo

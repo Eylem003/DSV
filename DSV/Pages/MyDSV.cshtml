@@ -13,48 +13,83 @@
     <link rel="stylesheet" href="~/DSV.styles.css" asp-append-version="true" />
 </head>
 <body>
-<h1>DSV Mødelokalebooking</h1>
-
-<div class="filter-container">
-    <label for="capacity">Kapacitet:</label>
-    <select id="capacity">
-        <option value="all">Alle</option>
-        <option value="small">1-5 personer</option>
-        <option value="medium">6-15 personer</option>
-        <option value="large">16+ personer</option>
-    </select>
-
-    <label for="equipment">Udstyr:</label>
-    <select id="equipment">
-        <option value="all">Alle</option>
-        <option value="projector">Projektor</option>
-        <option value="whiteboard">Whiteboard</option>
-    </select>
-</div>
-
-<div id="meeting-rooms-list">
-    <!-- Mødelokaler vil blive dynamisk tilføjet her via C# -->
-</div>
-
-<div id="booking-form" class="hidden">
-    <h2>Book et mødelokale</h2>
-    <form id="book-room-form">
-        <label for="room-name">Mødelokale:</label>
-        <input type="text" id="room-name" readonly>
-            
-        <label for="booking-date">Dato:</label>
-        <input type="date" id="booking-date">
-            
-        <label for="booking-time">Tidspunkt:</label>
-        <input type="time" id="booking-time">
-            
-        <label for="booking-comment">Kommentar:</label>
-        <textarea id="booking-comment"></textarea>
-
-        <button type="submit">Bekræft booking</button>
-    </form>
-</div>
-
-<script src="script.js"></script>
+<header>
+    <h1> Min Booking</h1>
+</header>
+<main>
+    <section class="filter">
+        <h2>Filtrer Mødelokaler</h2>
+        <label for="capacity">Kapacitet:</label>
+        <select id="capacity" name="capacity">
+            <option value="all">Alle</option>
+            <option value="1-5">1-5 personer</option>
+            <option value="6-10">6-10 personer</option>
+            <option value="11-15">11-15 personer</option>
+            <option value="16-20">16-20 personer</option>
+        </select>
+        
+        <label for="equipment"> Udstyr: </label>
+        <select id="equipment" name="equipment">
+            <option value="all">Alle</option>
+            <option value="projector">Projektor</option>
+            <option value="whiteboard">Whiteboard</option>
+            <option value="webcam">Webcam</option>
+            <option value="conferenc phone">Conferens Phone</option>
+            <option value="both">Projektor & Whiteboard</option>
+        </select>
+    </section>
+    
+    <section class="rooms">
+        <h2>Ledige Lokaler</h2>
+        <table>
+            <thead>
+            <tr>
+                <th>Lokale</th>
+                <th>Kapacitet</th>
+                <th>Status</th>
+                <th>Book</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>A</td>
+                <td>5 personer</td>
+            <td>Ledig</td>
+            <td>
+                <a href="rooms/Room=A.html"> Book</a></td> 
+            </tr>
+            <tr>
+                <td>B</td>
+                <td>7 personer</td>
+                <td>Ledig</td>
+                <td>
+                    <a href="rooms/Room=B.html"> Book</a></td>
+            </tr>
+            <tr>
+                <td>C</td>
+                <td>10 personer</td>
+                <td>Optage</td>
+                <td>
+                    <a href="rooms/Room=C.html" class="disabled"> Book</a></td>
+            </tr>
+            <tr>
+                <td>D</td>
+                <td>15 personer</td>
+                <td>Ledig</td>
+                <td>
+                    <a href=""> Book</a></td>
+            </tr>
+            <tr>
+                <td>E</td>
+                <td>20 personer</td>
+                <td>Optage</td>
+                <td>
+                    <a href="rooms/Room=E.html" class="disabled"> Book</a></td>
+            </tr>
+            </tbody>
+        </table>
+    </section>
+</main>
 </body>
 </html>
+
