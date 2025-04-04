@@ -7,18 +7,54 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] DSV </title>
+    <title>@ViewData["Title"] DSV Mødelokalebooking </title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/booking.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/DSV.styles.css" asp-append-version="true" />
 </head>
+<body>
+<h1>DSV Mødelokalebooking</h1>
 
-<body class="MyDSV-page">
-<div class="Text">
-    <h5> MY DSV</h5>
-    <p>HEJ HEJ TEST</p>
-    <p> TEst</p>
-    
+<div class="filter-container">
+    <label for="capacity">Kapacitet:</label>
+    <select id="capacity">
+        <option value="all">Alle</option>
+        <option value="small">1-5 personer</option>
+        <option value="medium">6-15 personer</option>
+        <option value="large">16+ personer</option>
+    </select>
+
+    <label for="equipment">Udstyr:</label>
+    <select id="equipment">
+        <option value="all">Alle</option>
+        <option value="projector">Projektor</option>
+        <option value="whiteboard">Whiteboard</option>
+    </select>
 </div>
+
+<div id="meeting-rooms-list">
+    <!-- Mødelokaler vil blive dynamisk tilføjet her via C# -->
+</div>
+
+<div id="booking-form" class="hidden">
+    <h2>Book et mødelokale</h2>
+    <form id="book-room-form">
+        <label for="room-name">Mødelokale:</label>
+        <input type="text" id="room-name" readonly>
+            
+        <label for="booking-date">Dato:</label>
+        <input type="date" id="booking-date">
+            
+        <label for="booking-time">Tidspunkt:</label>
+        <input type="time" id="booking-time">
+            
+        <label for="booking-comment">Kommentar:</label>
+        <textarea id="booking-comment"></textarea>
+
+        <button type="submit">Bekræft booking</button>
+    </form>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
