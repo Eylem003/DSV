@@ -10,4 +10,8 @@
     <Folder Include="wwwroot\images\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Compile Include="wwwroot\rooms\room A.cshtml.cs" />
+  </ItemGroup>
+
 </Project>
