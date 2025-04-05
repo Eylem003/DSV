@@ -58,8 +58,8 @@ body {
 .DSV-text-and-image hr {
   height: 3px;
   border-width: 2rem;
-  color: midnightblue; !important;
-  background: midnightblue;!important;
+  color: midnightblue !important;
+  background: midnightblue !important;
 }
 
 .DSV-text-and-image img {
@@ -72,10 +72,9 @@ body {
 }
 
 .OmDSV-text-and-image {
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  margin: 0 auto; 
+  width: 100%;
+  margin: 0;
+  padding: 0;
   display: block;
 }
 
@@ -84,7 +83,7 @@ body {
   width: 15vw;
   height: 15vw;
   margin-bottom: 20px;
-  position: relative; !important;
+  position: relative !important;
 }
 
 .OmDSV-text-and-image p {
@@ -109,7 +108,7 @@ body {
 .OmDSV-text-and-image h6 {
   color: black;
   font-size: 20px;
-  text-align: center; !important;
+  text-align: center !important;
   line-height: 1.5em;
   font-family:FoundrySterlingOT3W03-ExtraBold, Arial, Helvetica, sans-serif;
   margin-bottom: 20px;
@@ -118,7 +117,7 @@ body {
 .OmDSV-text-and-image b {
   color: black;
   font-size: 19px;
-  text-align: center; !important;
+  text-align: center !important;
   line-height: 1.5em;
   font-family:FoundrySterlingOT3W03-ExtraBold, Arial, Helvetica, sans-serif;
   font-weight: bolder;
@@ -128,7 +127,7 @@ body {
 .OmDSV-text-and-image i {
   color: black;
   font-size: 17px;
-  text-align: center; !important;
+  text-align: center !important;
   line-height: 1.5em;
   font-family:FoundrySterlingOT3W03-ExtraBold, Arial, Helvetica, sans-serif;
   font-weight: bolder;
@@ -164,13 +163,23 @@ body {
   margin-bottom: 20px;
 }
 
-.text-and-image hr {
-  height: 3px;
-  border-width: 2rem;
-  color: midnightblue; !important;
-  background: midnightblue;!important;
+.padding {
+  padding-top: 2rem !important;
+  padding-bottom: 2rem !important;
 }
 
 
+.text-and-image hr {
+  height: 3px;
+  border-width: 2rem;
+  color: midnightblue !important;
+  background: midnightblue!important;
+}
 
-.text 
+.flex-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+}
