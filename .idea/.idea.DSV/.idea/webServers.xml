@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="753928eb-eab7-40bc-b4f4-eb65ca378d88" name="nt3.unoeuro.com" url="razor.aastha.dk">
+        <fileTransfer rootFolder="/public_html" host="nt3.unoeuro.com" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
